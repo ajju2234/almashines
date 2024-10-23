@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Stack Overflow and Reddit Search</h1>
+        <input type="text" id="searchInput" placeholder="Enter your search query...">
+        <button id="searchButton">Search</button>
+        <br><br>
+        <select id="sortBy">
+            <option value="relevance">Sort by Relevance</option>
+            <option value="votes">Sort by Votes</option>
+            <option value="creation">Sort by Date</option>
+            <option value="activity">Sort by Activity</option>
+        </select>
+    </div>
+
+    <div class="results-container">
+        <div class="results-column">
+            <div class="results-title">Stack Overflow Results</div>
+            <div id="stackoverflowResults"></div>
+        </div>
+        <div class="results-column">
+            <div class="results-title">Reddit Results</div>
+            <div id="redditResults"></div>
+        </div>
+    </div>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
